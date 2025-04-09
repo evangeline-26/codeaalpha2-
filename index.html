@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="code.css">
+</head>
+<body>
+    <div class="player">
+        <h2>Simple Music Player</h2>
+        <audio id="audio-player">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+        </audio>
+        <div class="controls">
+            <button id="prev">⏮️</button>
+            <button id="play-pause">▶️</button>
+            <button id="next">⏭️</button>
+        </div>
+        <input type="range" id="volume" min="0" max="1" step="0.1">
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
