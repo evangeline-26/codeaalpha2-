@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Book Library</title>
+</head>
+<body>
+
+<h1>📚 My Book Library</h1>
+
+<!-- Add a Book -->
+<h2>Add a New Book</h2>
+<form method="POST" action="add_book.php">
+    <label>Title:</label><br>
+    <input type="text" name="title" required><br><br>
+
+    <label>Author:</label><br>
+    <input type="text" name="author"><br><br>
+
+    <label>Category:</label><br>
+    <input type="text" name="category"><br><br>
+
+    <input type="submit" value="Add Book">
+</form>
+
+<hr>
+
+<!-- Search Books -->
+<h2>Search Books</h2>
+<form method="GET" action="index.php">
+    <input type="text" name="search" placeholder="Enter book title, author, category">
+    <input type="submit" value="Search">
+</form>
+
+<hr>
+
+<!-- View Books -->
+<h2>View All Books</h2>
+<a href="index.php">Click here to view books</a>
+
+</body>
+</html>
